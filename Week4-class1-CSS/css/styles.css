@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+nav{
+    width:100%;
+    height:80px;
+    background-color:#f6f6f6;
+}
+
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin:30px;
+    padding:0 20px;
+
+    
+}
+nav li{
+    display:inline;
+    padding:0 20px;
+}
+
+nav li a{
+    text-decoration:none;
+    font-size:18px;
+}
+
+/** LVHA RULE PSEUDO CLASS **/
+nav li a:link{
+    color: gold;
+}
+nav li a:visited{
+    color: purple;
+}
+nav li a:hover{
+    color: yellow;
+  
+}
+
+nav li a:active{
+    color:black;
+}
+
+
+
+/* a[target]{
+    background-color:green;
+    padding:10px 24px;
+} */
+a[target='_blank']{
+    background-color:green;
+    padding:10px 24px;
+}
+
+a[href="index.html"]{
+    color:red;
+}
+
+main p::first-line{
+    color:red;
+}
+main p::selection{
+    color:red;
+    background-color:yellow;
+}
+
+ol{
+   margin-left:40px;
+   
+}
+ol::before{
+    content: '';
+    width:400px;
+    height:4px;
+    background-color:green;
+    position:absolute;
+    top: 120%;
+}
+ol::after{
+    content: url('https://img.freepik.com/premium-photo/portrait-native-african-woman-with-traditional-ornaments_691560-387.jpg')
+}
+
+/****Login page style****/
+
+.wrapper{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.content{
+    width:400px;
+    min-width:200px;
+    background-color:#f6f6f6;
+    padding:20px;
+}
+.wrapper .content h1{
+    text-align:center;
+    font-size:22px;
+}
+
+.wrapper .content input{
+    display:block;
+    width:100%;
+    height:48px;
+    margin: 15px 0;
+    padding:12px 16px;
+    border:none;
+    
+}
+
+input[type="email"]:focus , input[type="password"]:focus{
+    outline: 1px solid pink;
+
+}
+
+.content input[type="submit"]{
+    padding:10px 24px;
+    width:100%;
+    background-color:green;
+    color: #ffffff;
+    font-size:18px;
+    border:none;
+}
+
+input[type="submit"]:hover{
+    cursor:pointer;
+    background-color: rgba(0, 255, 0, 0.6)
+}
+
+/***PSEUDO ELEMENTS **/
+
+
+
+/***Dashboard style**/
+
+.dashboard-wrapper{
+    display:flex;
+   
+    height:100vh;
+}
+
+.aside{
+    width: 20%;
+    height :100%;
+    background-color:#f6f6f6;
+    padding:40px 20px;
+}
+
+.aside ul {
+    list-style-type:none;
+}
+.aside ul li {
+    padding: 30px 0;
+}
+.aside ul li a {
+ text-decoration:none;
+ font-size:18px;
+ display:inline-block;
+ width:100%;
+ padding: 10px 32px;
+ text-align:center;
+
+}
+.aside ul li a:link {
+color: #999999;
+
+}
+
+.aside ul li a:hover {
+    background-color: green;
+}
+
+.section{
+    width:75%;
+    height :100%;
+    overflow: auto;
+   
+    
+}
+.section .dashboard-content nav{
+    background-color:#ffffff;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.dashboard-content nav{
+    display: flex;
+    width:100%;
+    flex-direction:colunm;
+    justify-content:space-between;
+    align-items:center;
+    height:80px;
+    font-size:18px;
+    padding: 0 30px;
+}
+.dashboard-content nav img{
+    border-radius: 100%;
+}
+.dashboard-main{
+    padding:40px 20px;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+/* table , th, td{
+    border: 1px solid black;
+} */
+ /* th, td{
+    border-bottom: 1px solid black;
+} */
+th{
+    background-color:#04aa6d;
+    color:#ffffff;
+}
+tr:nth-child(even){
+    background-color:#f6f6f6;
+}
+tr:hover{
+    background-color:yellow;
+}
+th{
+    text-align:left;
+}
+td{
+    height:30px;
+}
+td, th{
+    padding:20px;
+}
